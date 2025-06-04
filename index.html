@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Kothamasu Thanuja - Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+  
+  <style>
+    /* Background */
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #f4f4f9;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    /* Overlay for subtle dark effect */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(44, 62, 80, 0.75);
+      z-index: -1;
+    }
+    
+    /* Navbar */
+    nav.navbar {
+      background-color: rgba(44, 62, 80, 0.85);
+      padding: 1rem 2rem;
+    }
+    nav .navbar-brand {
+      font-weight: 700;
+      font-size: 1.8rem;
+      color: #a8dadc !important;
+      letter-spacing: 1.2px;
+    }
+    nav .nav-link {
+      color: #dbe9f4;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    nav .nav-link:hover,
+    nav .nav-link.active {
+      color: #f1faee;
+      text-decoration: underline;
+    }
+    
+    /* Container */
+    .container {
+      max-width: 900px;
+      padding: 4rem 1rem 6rem;
+      flex-grow: 1;
+    }
+    
+    /* About Section */
+    #about {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      padding: 2.5rem 3rem;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+      margin-bottom: 3rem;
+      text-align: center;
+    }
+    #about h1 {
+      font-weight: 700;
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+      color: #a8dadc;
+      letter-spacing: 1.5px;
+    }
+    #about h3 {
+      font-weight: 500;
+      font-size: 1.4rem;
+      color: #f1faee;
+      margin-bottom: 1.5rem;
+    }
+    #about p {
+      font-weight: 300;
+      font-size: 1.2rem;
+      line-height: 1.6;
+      color: #dbe9f4;
+      max-width: 650px;
+      margin: 0 auto;
+    }
+    
+    /* Footer */
+    footer {
+      background-color: rgba(44, 62, 80, 0.9);
+      text-align: center;
+      padding: 1rem 0;
+      font-weight: 300;
+      color: #a8dadc;
+      letter-spacing: 0.8px;
+      font-size: 0.9rem;
+      margin-top: auto;
+    }
+    
+    /* Responsive tweaks */
+    @media (max-width: 576px) {
+      #about h1 {
+        font-size: 2rem;
+      }
+      #about p {
+        font-size: 1rem;
+        padding: 0 0.5rem;
+      }
+      nav.navbar {
+        padding: 0.8rem 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Thanuja</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <section id="about">
+      <h1>Kothamasu Thanuja</h1>
+      <h3>3rd Year CSE Student, LBRCE Mylavaram, Andhra Pradesh</h3>
+      <p>
+        Passionate Front End Developer using HTML, CSS, JavaScript, and Bootstrap to create beautiful, responsive, and user-friendly web experiences.
+      </p>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 Kothamasu Thanuja | Portfolio
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
